@@ -1,0 +1,66 @@
+:root {
+  --main_color: rgb(6, 212, 212);
+}
+body {
+  background-color: #f3f3f3;
+  width: 90%;
+  margin: auto;
+}
+.content {
+  display: inline-block;
+  margin-top: 20px;
+  width: calc((100% - 100px) / 3);
+  margin-right: 30px;
+  background-color: white;
+  box-shadow: 0 0 15px #ddd;
+}
+.card_head {
+  width: fit-content;
+  margin: auto;
+}
+.card_head p {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 15px 30px 15px 10px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #605e5e;
+}
+.card_head p span {
+  color: var(--main_color);
+}
+.card_imgs {
+  position: relative;
+}
+.card_imgs img.card {
+  max-width: 100%;
+}
+.card_imgs .card_img_on {
+  position: absolute;
+  right: 0;
+  transform: translateY(-50%);
+  margin-right: 30px;
+}
+.card_imgs .card_img_on img {
+  width: 100px;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+.content h4 {
+  margin: 60px 10px 30px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: var(--main_color);
+}
+.content h4 span {
+  padding-bottom: 10px;
+  border-bottom: 5px solid black;
+}
+.content h4 + p {
+  margin: 20px 20px 20px 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #605e5e;
+}
